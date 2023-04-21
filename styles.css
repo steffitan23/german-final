@@ -1,0 +1,72 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-align: center;
+
+  }
+  
+  .map {
+    margin:20px;
+    position: relative;
+    display: inline-block;
+
+  }
+  
+  .map img {
+    max-width:90%;
+    max-height: 600px;
+    display: block;
+    margin: auto;
+  }
+  
+  .box {
+    width:8%;
+    height:8%;
+    background-image: url(http://www.clker.com/cliparts/W/0/g/a/W/E/map-pin-red.svg);
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    position: absolute;
+  }
+  
+  #pin-1 {
+    top:29%;
+    left:10%;
+  }
+
+  #pin-2 {
+    top:41%;
+    left:66%;
+  }
+  
+  #pin-3 {
+    top:56%;
+    left:16%;
+  }
+  
+
+
+  .box:hover {
+      filter: brightness(0.7);
+      transition: 0.5s;
+  }
+  
+  .pin-text {
+    position: absolute;
+    bottom: 80%;
+  }
+  
+  .pin-text h2 {
+      font-size: 1.5rem;
+      font-weight: bold;
+      color: #00b3e2;
+      white-space: nowrap;
+      background-color: white;
+  }
+
+body {
+  padding-top: 4rem;
+    font-size: 1.5rem!important;
+    background-color: #f0f0f0!important;
+  }
