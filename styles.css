@@ -1,72 +1,120 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    text-align: center;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-align: center;
+}
 
-  }
-  
-  .map {
-    margin:20px;
-    position: relative;
-    display: inline-block;
+.map {
+  margin: 20px;
+  position: relative;
+  display: inline-block;
+  background-color: white;
+  padding: 20px;
+  box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 2px, rgba(0, 0, 0, 0.07) 0px 2px 4px,
+    rgba(0, 0, 0, 0.07) 0px 4px 8px, rgba(0, 0, 0, 0.07) 0px 8px 16px,
+    rgba(0, 0, 0, 0.07) 0px 16px 32px, rgba(0, 0, 0, 0.07) 0px 32px 64px;
+  border-radius: 25px;
+}
 
-  }
-  
-  .map img {
-    max-width:90%;
-    max-height: 600px;
-    display: block;
-    margin: auto;
-  }
-  
-  .box {
-    width:8%;
-    height:8%;
-    background-image: url(http://www.clker.com/cliparts/W/0/g/a/W/E/map-pin-red.svg);
-    background-position: top center;
-    background-repeat: no-repeat;
-    background-size: contain;
-    position: absolute;
-  }
-  
-  #pin-1 {
-    top:29%;
-    left:10%;
-  }
+.region-info {
+  padding: 2% 25%;
+  background-color: black;
+  opacity: 0.8;
+  box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 2px, rgba(0, 0, 0, 0.07) 0px 2px 4px,
+    rgba(0, 0, 0, 0.07) 0px 4px 8px, rgba(0, 0, 0, 0.07) 0px 8px 16px,
+    rgba(0, 0, 0, 0.07) 0px 16px 32px, rgba(0, 0, 0, 0.07) 0px 32px 64px;
+  line-height: normal;
+  text-align: left;
+}
 
-  #pin-2 {
-    top:41%;
-    left:66%;
-  }
-  
-  #pin-3 {
-    top:56%;
-    left:16%;
-  }
-  
+.region-info p {
+  color: white;
+  text-align: left;
+}
 
+.map img {
+  max-width: 90%;
+  max-height: 600px;
+  display: block;
+  margin: auto;
+}
 
-  .box:hover {
-      filter: brightness(0.7);
-      transition: 0.5s;
-  }
-  
-  .pin-text {
-    position: absolute;
-    bottom: 80%;
-  }
-  
-  .pin-text h2 {
-      font-size: 1.5rem;
-      font-weight: bold;
-      color: #00b3e2;
-      white-space: nowrap;
-      background-color: white;
-  }
+.box {
+  width: 8%;
+  height: 8%;
+  background-image: url(http://www.clker.com/cliparts/W/0/g/a/W/E/map-pin-red.svg);
+  background-position: top center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  position: absolute;
+}
+
+#pin-1 {
+  top: 29%;
+  left: 10%;
+}
+
+#pin-2 {
+  top: 41%;
+  left: 66%;
+}
+
+#pin-3 {
+  top: 56%;
+  left: 16%;
+}
+
+#pin-4 {
+  top: 26%;
+  left: 50%;
+}
+
+#pin-5 {
+  top: 77%;
+  left: 16%;
+}
+
+#pin-5 .pin-text {
+  right: 35%;
+}
+
+.box:hover {
+  filter: brightness(0.7);
+  transition: 0.5s;
+}
+
+.pin-text {
+  position: absolute;
+  bottom: 80%;
+}
+
+.pin-text h2 {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #00b3e2;
+  white-space: nowrap;
+  background-color: white;
+}
 
 body {
-  padding-top: 4rem;
-    font-size: 1.5rem!important;
-    background-color: #f0f0f0!important;
-  }
+  font-size: 1.3rem !important;
+  display: grid;
+  place-items: center;
+  background-color: #d5fefd;
+  background-image: url("./suffrage/wallpaper-suffrage.jpg");
+}
+
+h1 {
+  color: #00b3e2 !important;
+  text-align: left;
+}
+
+p {
+  font-weight: 300;
+  font-size: 1.3rem;
+}
+
+.region-info a {
+  font-size: 1.1rem;
+}
